@@ -56,6 +56,10 @@ i{
   font-weight: bold;
 }
 
+
+.content h2, .album h5{
+  color: white;
+}
 /*main*/
 
 /*premium*/
@@ -145,13 +149,50 @@ aside .aside-bottom{
   vertical-align: middle;
 }
 
-
-
 /*content*/
 .content{
   width: calc(100% - 200px);
   height: 100%;
-  background-color: aquamarine;
   overflow: auto;
-  padding-top: 100px;
+  padding-top: 90px;
 }
+
+.content nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 3%;
+}
+
+.content li{
+  padding: 0 1%;
+}
+
+.box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*recent played*/
+.content h2{
+  padding-left: 1%;
+}
+
+.album {
+  width: 175px;
+  height: 225px;
+  text-align: center;
+  padding-top: 2%;
+}
+
+.album img{
+  width: 100%;
+}
+
+.album span{
+  font-size: 11px;
+}
+
+
+
