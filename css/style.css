@@ -25,16 +25,6 @@ body{
   float: left;
 }
 
-main{
-  height: calc(100% - 80px);
-  background-color: #141922;
-}
-
-footer{
-  height: 80px;
-  background-color: gray;
-}
-
 nav ul{
   list-style: none;
 }
@@ -56,11 +46,15 @@ i{
   font-weight: bold;
 }
 
-
 .content h2, .album h5{
   color: white;
 }
+
 /*main*/
+main{
+  height: calc(100% - 80px);
+  background-color: #141922;
+}
 
 /*premium*/
 .premium{
@@ -168,31 +162,134 @@ aside .aside-bottom{
   padding: 0 1%;
 }
 
+
+/*recent played*/
 .box{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  overflow: hidden;
 }
 
-/*recent played*/
-.content h2{
+.content h2, .content span{
   padding-left: 1%;
 }
 
+.content span{
+  font-size: 11px;
+}
+
 .album {
-  width: 175px;
-  height: 225px;
+  width: 15%;
   text-align: center;
   padding-top: 2%;
+  margin-bottom: 5%;
 }
 
 .album img{
   width: 100%;
 }
 
-.album span{
-  font-size: 11px;
+.box.utente, .box.popolari{
+  justify-content: flex-start;
 }
+
+.box.utente .album, .box.popolari .album{
+  margin: 0 1.5% 2% 1.5%;
+}
+
+.box.popolari .album img{
+  border-radius: 50%;
+}
+
+/*footer*/
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #282828;
+  padding: 1%;
+}
+
+.music{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  width: 13%;
+}
+
+.music img{
+  height: 100%;
+}
+
+.song{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.song span:first-of-type{
+  font-size: 12px;
+  color: white;
+}
+
+.song span{
+  color: gray;
+  font-size: 12px;
+}
+
+.music i, .player i, .sound i{
+  font-size: 15px;
+}
+
+.player{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.player i, .sound i{
+  color: white;
+}
+
+.sound{
+  display: flex;
+  flex-direction: row;
+  width: 15%;
+  justify-content: space-between;
+}
+
+.sound .volume{
+  position: relative;
+  border: 2px solid gray;
+  max-height: 6px;
+  width: 60%;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+.sound .volume .volume-white{
+  position: relative;
+  top: -2px;
+  left: -2px;
+  width: 30%;
+  border-color: white;
+  background-color: white;
+  height: 6px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
 
 
 
