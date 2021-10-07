@@ -36,7 +36,7 @@
           </nav>
           <nav>
             <ul>
-              <li><a class="grassetto" href="#">Playlist</a></li>
+              <li class="grassetto">Playlist</li>
               <li><a href="#"><span id="add-playlist">+</span> Crea playlist</a></li>
               <li><a href="#">Nome Playlist</a></li>
               <li><a href="#">Nome Playlist</a></li>
@@ -50,25 +50,25 @@
         </div>
         <div class="aside-bottom">
           <img src="img/download.svg" alt="download">
-          <span>Installa app</span>
+          <span><a href="#">Installa app</a></span>
           <div></div>
           <img id="profilo" src="img/profile.svg" alt="profilo">
           <span class="grassetto"> John Doe</span>
         </div>  
       </aside>
-
+      
       <div class="content float-l">
         <nav class="grassetto">
           <ul>
-            <li><a href="#">In evidenza</a></li>
-            <li><a href="#">Podcast</a></li>
-            <li><a href="#">Classifiche</a></li>
-            <li><a href="#">Generi e mood</a></li>
-            <li><a href="#">Nuove uscite</a></li>
-            <li><a href="#">Scopri</a></li>
+            <li><a class="bordo-b" href="#">In evidenza</a></li>
+            <li><a class="bordo-b" href="#">Podcast</a></li>
+            <li><a class="bordo-b" href="#">Classifiche</a></li>
+            <li><a class="bordo-b" href="#">Generi e mood</a></li>
+            <li><a class="bordo-b" href="#">Nuove uscite</a></li>
+            <li><a class="bordo-b" href="#">Scopri</a></li>
           </ul>
         </nav>
-
+        
         <section>
           <h2>Recently played</h2>
           <div class="box">
@@ -149,10 +149,19 @@
       </div>
       <div class="player">
         <div class="comand">
-          <i class="fas fa-random"></i>
-          <i class="fas fa-step-backward"></i>
+          <a href=""><i class="fas fa-random"></i></a>
+          <a href=""><i class="fas fa-step-backward"></i></a>
+          <a href=""><i id="play" class="far fa-play-circle"></i></a>
+          <a href=""><i class="fas fa-step-forward"></i></a>
+          <a href=""><i class="fas fa-redo-alt"></i></a>
         </div>
-        <div class="time-line">2</div>
+        <div class="time-line">
+          <span>0:25</span>
+          <div class="time">
+            <div class="time-white"></div>
+          </div>
+          <span>4:35</span>
+        </div>
       </div>
       <div class="sound">
         <i class="fas fa-list"></i>

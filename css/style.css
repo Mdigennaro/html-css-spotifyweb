@@ -77,6 +77,10 @@ main{
   cursor: pointer;
 }
 
+.premium a:hover{
+  font-size: 13px;
+}
+
 /*aside*/
 aside{
   width: 200px;
@@ -109,6 +113,15 @@ aside nav img{
   width: 25px;
   vertical-align: middle;
   filter: invert(50%);
+}
+
+aside a:hover{
+  color: white;
+}
+
+aside li:active{
+  border-left: 2px solid #adff2f;
+  padding-left: 1%;
 }
 
 #add-playlist{
@@ -162,7 +175,14 @@ aside .aside-bottom{
   padding: 0 1%;
 }
 
+.content.float-l .grassetto a:hover{
+  color: white;
+}
 
+.bordo-b:active{
+  padding-bottom: 10%;
+  border-bottom: 2px solid #adff2f;
+}
 /*recent played*/
 .box{
   display: flex;
@@ -184,11 +204,12 @@ aside .aside-bottom{
   text-align: center;
   padding-top: 2%;
   margin-bottom: 5%;
+  cursor: pointer;
 }
 
 .album img{
   width: 100%;
-}
+}  
 
 .box.utente, .box.popolari{
   justify-content: flex-start;
@@ -240,10 +261,21 @@ footer{
 .song span{
   color: gray;
   font-size: 12px;
+  cursor: pointer;
+}
+
+.song span:last-of-type:hover{
+  color: white;
+  text-decoration: underline;
 }
 
 .music i, .player i, .sound i{
   font-size: 15px;
+  cursor: pointer;
+}
+
+.music i:hover {
+  color: white;
 }
 
 .player{
@@ -271,6 +303,7 @@ footer{
   width: 60%;
   background-color: gray;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .sound .volume .volume-white{
@@ -284,12 +317,74 @@ footer{
   border-radius: 10px;
 }
 
+.sound .volume .volume-white:hover{
+  background-color: #adff2f;
+  color: #adff2f;
+  height: 7px;
+}
 
+.sound i{
+  cursor: pointer;
+}
 
+.player{
+  width: 35%;
+}
 
+.player .comand{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+#play{
+  font-size: 25px;
+}
 
+#play:hover{
+  font-size: 26px;
+}
 
+.player .comand a{
+  margin: 0 3%;
+}
 
+.time-line{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.time-line span{
+  font-size: 12px;
+  color: white;
+}
 
+.time-line .time{
+  position: relative;
+  border: 2px solid gray;
+  max-height: 6px;
+  width: 80%;
+  background-color: gray;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.time-line .time .time-white{
+  position: relative;
+  top: -2px;
+  left: -2px;
+  width: 30%;
+  border-color: white;
+  background-color: white;
+  height: 6px;
+  border-radius: 10px;
+}
+
+.time .time-white:hover{
+  background-color: #adff2f;
+  color: #adff2f;
+  height: 7px;
+}
+
+@media ( max-width: 576px) {}
