@@ -90,6 +90,10 @@ aside{
   overflow: hidden;
 }
 
+.aside-top-xs, .aside-bottom-xs{
+  display: none;
+}
+
 aside .aside-top{
   height: calc(100% - 60px);
   min-height: 220px;
@@ -209,7 +213,7 @@ aside .aside-bottom{
 
 .album img{
   width: 100%;
-}  
+} 
 
 .box.utente, .box.popolari{
   justify-content: flex-start;
@@ -240,7 +244,7 @@ footer{
   justify-content: space-between;
   align-items: center;
   height: 45px;
-  width: 13%;
+  width: 20%;
 }
 
 .music img{
@@ -387,4 +391,143 @@ footer{
   height: 7px;
 }
 
-@media ( max-width: 576px) {}
+/*media query*/
+
+/*md*/
+@media (max-width: 991px) {
+  .content .box{
+    justify-content: flex-start;
+    align-content: stretch;
+    flex-wrap: wrap;
+  }
+
+  .content .box .album{
+    width: 22%;
+    margin: 0 1.5%;
+  }
+
+  .music{
+    width: 25%;
+  }
+
+  .sound{
+    width: 25%;
+  }
+}
+
+/*s*/
+@media (max-width: 767px) {
+  .content .box{
+    justify-content: flex-start;
+    align-content: stretch;
+    flex-wrap: wrap;
+  }
+
+  .content .box .album{
+    width: 30%;
+    margin: 0 1.5%;
+  }
+  
+  .content nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .content nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 3%;
+  }
+
+  .content nav ul li{
+    width: 25%;
+    margin-bottom: 3%;
+  }
+
+  .content .box{
+    justify-content: space-around;
+    align-content: stretch;
+    flex-wrap: wrap;
+  }
+
+  .content .box .album{
+    width: 40%;
+    margin: 0 1.5%;
+  }
+
+  .music .column{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*xs*/
+@media (max-width: 575px){
+  aside{
+    width: 50px;
+    padding-bottom: 5px;
+  }
+
+  .aside-top, .aside-bottom{
+    display: none;
+  }
+
+  .premium{
+    width: calc(100% - 50px);
+  }
+
+  .aside-top-xs{
+    height: calc(100% - 60px);
+    min-height: 220px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aside-top-xs img{
+    width: 30px;
+    margin-bottom: 10px;
+  }
+
+  .aside-top-xs a{
+    filter: invert(.5);
+  }
+
+  .aside-bottom-xs{
+    display: inline-block;
+    height: 60px;
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aside-bottom-xs img{
+    width: 20px;
+    cursor: pointer;
+  }
+
+  #profilo{
+    width: 25px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+
+  .content{
+    width: calc(100% - 50px);
+  }
+
+  .content nav ul li{
+    width: 33%;
+  }
+
+.sound{
+  width: 30%;
+}
+}
